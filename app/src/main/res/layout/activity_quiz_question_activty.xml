@@ -6,16 +6,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/ic_bg"
     tools:context=".QuizQuestionActivity">
 
     <TextView
         android:id="@+id/tv_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
+        android:layout_margin="15dp"
         android:gravity="center"
-        android:textSize="23sp"
-        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:text="What country does flag belong to?"/>
 
@@ -50,6 +51,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="15dp"
+            android:textColor="@color/black"
             android:textSize="14sp"
             android:text="0/9"/>
     </LinearLayout>

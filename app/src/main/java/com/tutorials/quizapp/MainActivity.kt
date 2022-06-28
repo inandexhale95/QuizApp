@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val etName = findViewById<EditText>(R.id.et_name)
         val btnStart = findViewById<Button>(R.id.btn_start)
+
         btnStart.setOnClickListener {
             if (etName.text.isEmpty()) {
                 Toast.makeText(this, "이름을 입력해주세요.", Toast.LENGTH_SHORT).show()
@@ -25,6 +27,5 @@ class MainActivity : AppCompatActivity() {
                 finish()
             }
         }
-
     }
 }

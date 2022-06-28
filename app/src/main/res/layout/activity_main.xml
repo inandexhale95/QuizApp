@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:background="@color/white"
+        style="@style/WhiteCardView"
         app:cardCornerRadius="15dp">
 
         <LinearLayout
@@ -44,6 +44,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:gravity="center"
                 android:text="Please enter your name."/>
 
@@ -51,7 +52,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@color/white"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/design_default_color_primary"
+                android:textColorHint="@color/design_default_color_primary"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp">
 
@@ -60,6 +64,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Name"
+                    android:textColor="@color/black"
                     android:inputType="textCapWords"
                     android:textColorHint="@color/black">
                 </androidx.appcompat.widget.AppCompatEditText>
@@ -70,6 +75,7 @@
                 android:id="@+id/btn_start"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="20sp"
                 android:text="Start"/>
 
         </LinearLayout>
